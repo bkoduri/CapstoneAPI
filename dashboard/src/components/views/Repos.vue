@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-center">One.Cummins</h1>
+    <h1 class="text-center">Employee Helper</h1>
     <h4 class="text-center">Access all self service sites from here</h4>
 
     <section class="content">

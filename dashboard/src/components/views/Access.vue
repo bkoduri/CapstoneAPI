@@ -1,7 +1,7 @@
 '<template>
   <section class="content">
-    <h1 class="text-center">Access</h1>
-    <h4 class="text-center">Global presence of Cummins.</h4>
+    <h1 class="text-center">Hospital Network</h1>
+    <h4 class="text-center">Global presence of our partner Hospitals</h4>
     <!-- first -->
     <div class="row">
       <div class="col-md-12">
@@ -29,21 +29,21 @@
                   <div class="description-block margin-bottom">
                     <div class="row" data-color="#fff"><i class="fa fa-group fa-3x"></i></div>
                     <h5 class="description-header">15000+</h5>
-                    <span class="description-text">GLOBAL CUSTOMERS</span>
+                    <span class="description-text">GLOBAL PATIENTS</span>
                   </div>
                   <div class="description-block margin-bottom">
                     <div class="row" data-color="#fff"><i class="fa fa-truck fa-3x"></i></div>
                     <h5 class="description-header">750000+</h5>
-                    <span class="description-text">DISTRIBUTOR FACILITIES</span>
+                    <span class="description-text">INSURANCE ClAIMS</span>
                   </div>
                   <div class="description-block margin-bottom">
                     <div class="row" data-color="#fff"><i class="fa fa-sitemap fa-3x"></i></div>
-                    <h5 class="description-header">7500+</h5>
-                    <span class="description-text">DEALER LOCATIONS</span>
+                    <h5 class="description-header">500+</h5>
+                    <span class="description-text">LOCATIONS</span>
                   </div>
                   <div class="description-block margin-bottom">
                     <div class="row" data-color="#fff"><i class="fa fa-group fa-3x"></i></div>
-                    <h5 class="description-header">58,000+</h5>
+                    <h5 class="description-header">8,000+</h5>
                     <span class="description-text">GLOBAL EMPLOYEES</span>
                   </div>
                 </div>
@@ -86,17 +86,17 @@
                   <div class="description-block margin-bottom">
                     <div class="row" data-color="#fff"><i class="fa fa-group fa-3x"></i></div>
                     <h5 class="description-header">5000+</h5>
-                    <span class="description-text">CUSTOMERS</span>
+                    <span class="description-text">PATIENTS</span>
                   </div>
                   <div class="description-block margin-bottom">
                     <div class="row" data-color="#fff"><i class="fa fa-truck fa-3x"></i></div>
                     <h5 class="description-header">100+</h5>
-                    <span class="description-text">DISTRIBUTOR FACILITIES</span>
+                    <span class="description-text">INSURANCE CLAIMS</span>
                   </div>
                   <div class="description-block margin-bottom">
                     <div class="row" data-color="#fff"><i class="fa fa-sitemap fa-3x"></i></div>
-                    <h5 class="description-header">1500+</h5>
-                    <span class="description-text">DEALER LOCATIONS</span>
+                    <h5 class="description-header">200+</h5>
+                    <span class="description-text">LOCATIONS</span>
                   </div>
                 </div>
               </div>
@@ -138,17 +138,17 @@
                   <div class="description-block margin-bottom">
                     <div class="row" data-color="#fff"><i class="fa fa-group fa-3x"></i></div>
                     <h5 class="description-header">200+</h5>
-                    <span class="description-text">CUSTOMERS</span>
+                    <span class="description-text">PATIENTS</span>
                   </div>
                   <div class="description-block margin-bottom">
                     <div class="row" data-color="#fff"><i class="fa fa-truck fa-3x"></i></div>
                     <h5 class="description-header">20+</h5>
-                    <span class="description-text">DISTRIBUTOR FACILITIES</span>
+                    <span class="description-text">INSURANCE CLAIMS</span>
                   </div>
                   <div class="description-block margin-bottom">
                     <div class="row" data-color="#fff"><i class="fa fa-sitemap fa-3x"></i></div>
                     <h5 class="description-header">100+</h5>
-                    <span class="description-text">DEALER LOCATIONS</span>
+                    <span class="description-text">LOCATIONS</span>
                   </div>
                 </div>
               </div>

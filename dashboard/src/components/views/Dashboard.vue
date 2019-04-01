@@ -6,15 +6,15 @@
       <div class="alert alert-success alert-dismissible">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
         <h4><i class="icon fa fa-cogs"></i> Weekly Scheduled Maintenance</h4>
-        Systems will not be accessible from 1 am to 2 am EST on this Saturday.
+        Maintenance is scheduled from 1 am to 2 am EST on this Saturday.
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box">
           <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">Cloud Uptime</span>
-            <span class="info-box-number">99.8<small>%</small></span>
+            <span class="info-box-text">Patients in ER</span>
+            <span class="info-box-number">18</span>
           </div>
           <!-- /.info-box-content -->
         </div>
@@ -26,8 +26,8 @@
           <span class="info-box-icon bg-red"><i class="fa fa-server"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">Servers Provisioned</span>
-            <span class="info-box-number">1,410</span>
+            <span class="info-box-text">Doctors on Duty</span>
+            <span class="info-box-number">14</span>
           </div>
           <!-- /.info-box-content -->
         </div>
@@ -43,8 +43,8 @@
           <span class="info-box-icon bg-green"><i class="fa fa-database"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">Data Collected</span>
-            <span class="info-box-number">960 <small>TB</small></span>
+            <span class="info-box-text">Nurses on Duty</span>
+            <span class="info-box-number">10</span>
           </div>
           <!-- /.info-box-content -->
         </div>
@@ -56,8 +56,8 @@
           <span class="info-box-icon bg-yellow"><i class="fa fa-folder"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text"><small>Active Applications</small></span>
-            <span class="info-box-number">2,048</span>
+            <span class="info-box-text"><small>Avilable Beds</small></span>
+            <span class="info-box-number">20</span>
           </div>
           <!-- /.info-box-content -->
         </div>
@@ -74,14 +74,14 @@
           <div class="box-body">
             <div class="col-sm-6 col-xs-12">
               <p class="text-center">
-                <strong>Yearly Sales Overview</strong>
+                <strong>Patient Summary</strong>
               </p>
               <canvas id="trafficBar" ></canvas>
             </div>
             <hr class="visible-xs-block">
             <div class="col-sm-6 col-xs-12">
               <p class="text-center">
-                <strong>2018 Sales Statistics</strong>
+                <strong>Cause of Admits</strong>
               </p>
               <canvas id="languagePie"></canvas>
             </div>
@@ -99,8 +99,8 @@
           <span class="info-box-icon"><i class="fa fa-truck"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">Sales</span>
-            <span class="info-box-number">830<small>M</small></span>
+            <span class="info-box-text">Inventory</span>
+            <span class="info-box-number">3<small>M</small></span>
 
             <div class="progress">
               <div class="progress-bar" style="width: 10%"></div>
@@ -117,8 +117,8 @@
           <span class="info-box-icon"><i class="fa fa-ticket"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">Service Tickets</span>
-            <span class="info-box-number">12,050</span>
+            <span class="info-box-text">Service Requests</span>
+            <span class="info-box-number">2,050</span>
 
             <div class="progress">
               <div class="progress-bar" style="width: 20%"></div>
@@ -135,7 +135,7 @@
           <span class="info-box-icon"><i class="fa fa-thumbs-o-up"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">Customer Satisfaction</span>
+            <span class="info-box-text">Patient Satisfaction</span>
             <span class="info-box-number">93<small>%</small></span>
 
             <div class="progress">
@@ -153,8 +153,8 @@
           <span class="info-box-icon"><i class="fa fa-group"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">New Customers</span>
-            <span class="info-box-number">3,921</span>
+            <span class="info-box-text">New Patients</span>
+            <span class="info-box-number">921</span>
 
             <div class="progress">
               <div class="progress-bar" style="width: 40%"></div>
@@ -189,10 +189,10 @@ export default {
   },
   computed: {
     coPilotNumbers () {
-      return this.generateRandomNumbers(12, 1000000, 10000)
+      return this.generateRandomNumbers(12, 100, 1)
     },
     personalNumbers () {
-      return this.generateRandomNumbers(12, 1000000, 10000)
+      return this.generateRandomNumbers(12, 100, 1)
     },
     isMobile () {
       return (window.innerWidth <= 800 && window.innerHeight <= 600)
@@ -206,14 +206,14 @@ export default {
         data: {
           labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
           datasets: [{
-            label: 'Engines',
+            label: 'Admits',
             fill: false,
             borderColor: '#284184',
             pointBackgroundColor: '#284184',
             backgroundColor: 'rgba(0, 0, 0, 0)',
             data: this.coPilotNumbers
           }, {
-            label: 'Power Systems',
+            label: 'Discharge',
             borderColor: '#4BC0C0',
             pointBackgroundColor: '#4BC0C0',
             backgroundColor: 'rgba(0, 0, 0, 0)',
@@ -242,7 +242,7 @@ export default {
       var pieConfig = {
         type: 'pie',
         data: {
-          labels: ['Engine', 'Power Systems', 'Components', 'Distribution', 'Electrified Power'],
+          labels: ['Road Accidents', 'Injury', 'Burns', 'Electrification', 'Animal Bites'],
           datasets: [{
             data: [26.6, 24.7, 22.7, 20.5, 5.5],
             backgroundColor: ['#c1222a', '#00a65a', '#4286f4', '#f39c12', '#00c0ef'],

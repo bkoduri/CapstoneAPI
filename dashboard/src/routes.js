@@ -26,12 +26,12 @@ const routes = [
         alias: '',
         component: DashboardView,
         name: 'Dashboard',
-        meta: {description: 'Overview of customer support environment'}
+        meta: {description: 'Overview of patient support environment'}
       }, {
         path: 'tables',
         component: TablesView,
         name: 'Tables',
-        meta: {description: 'Visualize Customer Data in tabular format'}
+        meta: {description: 'Visualize patient Data in tabular format'}
       }, {
         path: 'tasks',
         component: TasksView,
@@ -40,13 +40,13 @@ const routes = [
       }, {
         path: 'setting',
         component: SettingView,
-        name: 'Settings',
-        meta: {description: 'User settings page'}
+        name: 'Enrollment',
+        meta: {description: 'User Enrollment page'}
       }, {
         path: 'access',
         component: AccessView,
         name: 'Customer Map',
-        meta: {description: 'Shows customer presence across the globe'}
+        meta: {description: 'Shows network presence across the globe'}
       }, {
         path: 'server',
         component: ServerView,

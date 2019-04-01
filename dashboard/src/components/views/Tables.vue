@@ -1,11 +1,11 @@
 <template>
   <section class="content">
     <div class="row center-block">
-      <h2>Status</h2>
+      <h2>Patient Records</h2>
       <div class="col-md-12">
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Progress of IT tasks</h3>
+            <h3 class="box-title">Health History</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body no-padding table-responsive">
@@ -13,13 +13,13 @@
               <tbody>
                 <tr>
                   <th style="width: 10px">#</th>
-                  <th>Task</th>
-                  <th>Progress</th>
-                  <th style="width: 40px">Label</th>
+                  <th>Health</th>
+                  <th>Status</th>
+                  <th style="width: 40px">Score</th>
                 </tr>
                 <tr>
                   <td>1.</td>
-                  <td>Software update</td>
+                  <td>Diabetes</td>
                   <td>
                     <div class="progress progress-xs">
                       <div class="progress-bar progress-bar-danger" style="width: 45%"></div>
@@ -29,7 +29,7 @@
                 </tr>
                 <tr>
                   <td>2.</td>
-                  <td>Database backups</td>
+                  <td>Hyper Tension</td>
                   <td>
                     <div class="progress progress-xs">
                       <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
@@ -39,7 +39,7 @@
                 </tr>
                 <tr>
                   <td>3.</td>
-                  <td>Cron job running</td>
+                  <td>Cardiac Risk</td>
                   <td>
                     <div class="progress progress-xs progress-striped active">
                       <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
@@ -49,7 +49,7 @@
                 </tr>
                 <tr>
                   <td>4.</td>
-                  <td>Bug fixes</td>
+                  <td>Ligaments</td>
                   <td>
                     <div class="progress progress-xs progress-striped active">
                       <div class="progress-bar progress-bar-success" style="width: 90%"></div>
@@ -66,11 +66,11 @@
     </div>
 
     <div class="row center-block">
-      <h2>Data tables</h2>
+      <h2>Diagnostic Reports</h2>
       <div class="col-md-12">
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Service History</h3>
+            <h3 class="box-title">Medical History</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
@@ -88,11 +88,11 @@
                   <table class="table table-bordered table-striped dataTable">
                     <thead>
                       <tr role="row">
-                        <th style="width: 107px;" colspan="1" rowspan="1">Service ID</th>
-                        <th style="width: 207px;" colspan="1" rowspan="1">Service Date</th>
+                        <th style="width: 107px;" colspan="1" rowspan="1">Test ID</th>
+                        <th style="width: 207px;" colspan="1" rowspan="1">Test Date</th>
                         <th style="width: 182px;" colspan="1" rowspan="1">Summary</th>
                         <th style="width: 142px;" colspan="1" rowspan="1">Health Grade</th>
-                        <th style="width: 101px;" colspan="1" rowspan="1">Product ID</th>
+                        <th style="width: 101px;" colspan="1" rowspan="1">Patient ID</th>
                       </tr>
                     </thead>
                     <tbody>

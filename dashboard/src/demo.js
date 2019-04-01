@@ -87,8 +87,8 @@ export const timeline = [{
 {
   icon: 'fa-camera',
   color: 'purple',
-  title: 'Career Paths for Cummins Service Technicans',
+  title: 'Career Paths for Service Technicans',
   time: moment('20130620', 'YYYYMMDD').fromNow(),
 
-  body: '<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/TXMIYS6MLVw" frameborder="0" allowfullscreen></iframe></div>'
+  body: '<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/jeioEVOZSy4" frameborder="0" allowfullscreen></iframe></div>'
 }]

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-center">Settings</h1>
+    <h1 class="text-center">New Patient Enrolment</h1>
     <section class="content">
       <div class="row">
         <div class="col-md-12">

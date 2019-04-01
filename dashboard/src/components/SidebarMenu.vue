@@ -31,7 +31,7 @@
     <router-link tag="li" class="pageLink" to="/setting">
       <a>
         <i class="fa fa-cog"></i>
-        <span class="page">Settings</span>
+        <span class="page">Enrollment</span>
       </a>
     </router-link>
     <li class="treeview">
