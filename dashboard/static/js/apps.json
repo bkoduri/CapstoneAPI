@@ -1,0 +1,82 @@
+{
+  "items": [
+    {
+      "name": "Human Resources",
+      "owner": {
+        "login": "freeCodeCamp",
+        "avatar_url": "https://www.maineenergymarketers.com/wp-content/uploads/icn-hr-outsourcing.png",
+        "url": "https://api.github.com/users/freeCodeCamp",
+        "html_url": "https://github.com/freeCodeCamp"
+      },
+      "html_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "stargazers_count": 296343,
+      "forks_count": 20574,
+      "forks": 20574
+    },
+    {
+      "name": "Jira Issue Tracker",
+      "owner": {
+        "login": "freeCodeCamp",
+        "avatar_url": "https://confluence.atlassian.com/jiraportfolioserver/files/715263087/785461173/1/1445919671060/atlassian_software-17.png",
+        "url": "https://www.atlassian.com/",
+        "html_url": "https://www.atlassian.com/"
+      },
+      "html_url": "https://www.atlassian.com/",
+      "stargazers_count": 246343,
+      "forks_count": 18574,
+      "forks": 18574
+    },
+    {
+      "name": "Cloud Monitor",
+      "owner": {
+        "login": "freeCodeCamp",
+        "avatar_url": "https://avatars0.githubusercontent.com/u/9892522?v=4",
+        "url": "https://www.akamai.com/us/en/solutions/intelligent-platform/cloud-monitor.jsp",
+        "html_url": "https://www.akamai.com/us/en/solutions/intelligent-platform/cloud-monitor.jsp"
+      },
+      "html_url": "https://www.akamai.com/us/en/solutions/intelligent-platform/cloud-monitor.jsp",
+      "stargazers_count": 196333,
+      "forks_count": 13574,
+      "forks": 13574
+    },
+    {
+      "name": "Payroll",
+      "owner": {
+        "login": "freeCodeCamp",
+        "avatar_url": "https://quikchex.in/wp-content/uploads/2015/09/payroll.png",
+        "url": "https://www.sap.com/products/human-resources-hcm/core-hr-payroll.html",
+        "html_url": "https://www.sap.com/products/human-resources-hcm/core-hr-payroll.html"
+      },
+      "html_url": "https://www.sap.com/products/human-resources-hcm/core-hr-payroll.htmlp",
+      "stargazers_count": 186343,
+      "forks_count": 10574,
+      "forks": 10574
+    },
+    {
+      "name": "Leave Management",
+      "owner": {
+        "login": "freeCodeCamp",
+        "avatar_url": "https://www.avanteam.fr/portals/0/Images/Logiciels/Accelerate_256.png",
+        "url": "https://www.successfactors.com/en_us/solutions/time-and-attendance-management.html",
+        "html_url": "https://www.successfactors.com/en_us/solutions/time-and-attendance-management.html"
+      },
+      "html_url": "https://www.successfactors.com/en_us/solutions/time-and-attendance-management.html",
+      "stargazers_count": 126343,
+      "forks_count": 9577,
+      "forks": 9577
+    },
+    {
+      "name": "Travel Management",
+      "owner": {
+        "login": "freeCodeCamp",
+        "avatar_url": "https://static-s.aa-cdn.net/img/ios/606214321/ee396bc02bacabe0e14f6e99cb7b1d9b?v=1",
+        "url": "https://www.concur.com/en-us/travel-booking",
+        "html_url": "https://www.concur.com/en-us/travel-booking"
+      },
+      "html_url": "https://www.concur.com/en-us/travel-booking",
+      "stargazers_count": 96343,
+      "forks_count": 8674,
+      "forks": 8674
+    }
+  ]
+}

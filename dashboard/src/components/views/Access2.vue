@@ -8,7 +8,7 @@
         <!-- MAP & BOX PANE -->
         <div class="box box-success">
           <div class="box-header with-border">
-            <h3 class="box-title">Global Report</h3>
+            <h3 class="box-title">Company Report</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -26,25 +26,10 @@
               <!-- /.col -->
               <div class="col-md-4">
                 <div class="pad box-pane-right bg-red" style="min-height: 400px">
-                  <div class="description-block margin-bottom">
-                    <div class="row" data-color="#fff"><i class="fa fa-group fa-3x"></i></div>
-                    <h5 class="description-header">15000+</h5>
-                    <span class="description-text">GLOBAL CUSTOMERS</span>
-                  </div>
-                  <div class="description-block margin-bottom">
-                    <div class="row" data-color="#fff"><i class="fa fa-truck fa-3x"></i></div>
-                    <h5 class="description-header">750000+</h5>
-                    <span class="description-text">DISTRIBUTOR FACILITIES</span>
-                  </div>
-                  <div class="description-block margin-bottom">
-                    <div class="row" data-color="#fff"><i class="fa fa-sitemap fa-3x"></i></div>
-                    <h5 class="description-header">7500+</h5>
-                    <span class="description-text">DEALER LOCATIONS</span>
-                  </div>
-                  <div class="description-block margin-bottom">
-                    <div class="row" data-color="#fff"><i class="fa fa-group fa-3x"></i></div>
-                    <h5 class="description-header">58,000+</h5>
-                    <span class="description-text">GLOBAL EMPLOYEES</span>
+                  <div v-for="stat in stats" class="description-block margin-bottom">
+                    <div class="row" data-color="#fff"><i class="fa fa-bar-chart-o fa-3x"></i></div>
+                    <h5 class="description-header">{{stat.header}}</h5>
+                    <span class="description-text">{{stat.text}}</span>
                   </div>
                 </div>
               </div>
@@ -65,7 +50,7 @@
         <!-- MAP & BOX PANE -->
         <div class="box box-success">
           <div class="box-header with-border">
-            <h3 class="box-title">USA Report</h3>
+            <h3 class="box-title">Company Report</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -82,21 +67,11 @@
               </div>
               <!-- /.col -->
               <div class="col-md-4">
-                <div class="pad box-pane-right bg-red" style="min-height: 355px">
-                  <div class="description-block margin-bottom">
-                    <div class="row" data-color="#fff"><i class="fa fa-group fa-3x"></i></div>
-                    <h5 class="description-header">5000+</h5>
-                    <span class="description-text">CUSTOMERS</span>
-                  </div>
-                  <div class="description-block margin-bottom">
-                    <div class="row" data-color="#fff"><i class="fa fa-truck fa-3x"></i></div>
-                    <h5 class="description-header">100+</h5>
-                    <span class="description-text">DISTRIBUTOR FACILITIES</span>
-                  </div>
-                  <div class="description-block margin-bottom">
-                    <div class="row" data-color="#fff"><i class="fa fa-sitemap fa-3x"></i></div>
-                    <h5 class="description-header">1500+</h5>
-                    <span class="description-text">DEALER LOCATIONS</span>
+                <div class="pad box-pane-right bg-red" style="min-height: 400px">
+                  <div v-for="stat in stats" class="description-block margin-bottom">
+                    <div class="row" data-color="#fff"><i class="fa fa-bar-chart-o fa-3x"></i></div>
+                    <h5 class="description-header">{{stat.header}}</h5>
+                    <span class="description-text">{{stat.text}}</span>
                   </div>
                 </div>
               </div>
@@ -111,58 +86,6 @@
     </div>
     <!-- second end -->
 
-    <!-- third -->
-    <div class="row">
-      <div class="col-md-12">
-        <!-- MAP & BOX PANE -->
-        <div class="box box-success">
-          <div class="box-header with-border">
-            <h3 class="box-title">Indiana Report</h3>
-
-            <div class="box-tools pull-right">
-              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-              </button>
-              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-            </div>
-          </div>
-          <!-- /.box-header -->
-          <div class="box-body no-padding">
-            <div class="row no-gutters">
-              <div class="col-md-8">
-                  <!-- Map will be created here -->
-                  <div id="in-map-markers"></div>
-              </div>
-              <!-- /.col -->
-              <div class="col-md-4">
-                <div class="pad box-pane-right bg-red" style="min-height: 355px">
-                  <div class="description-block margin-bottom">
-                    <div class="row" data-color="#fff"><i class="fa fa-group fa-3x"></i></div>
-                    <h5 class="description-header">200+</h5>
-                    <span class="description-text">CUSTOMERS</span>
-                  </div>
-                  <div class="description-block margin-bottom">
-                    <div class="row" data-color="#fff"><i class="fa fa-truck fa-3x"></i></div>
-                    <h5 class="description-header">20+</h5>
-                    <span class="description-text">DISTRIBUTOR FACILITIES</span>
-                  </div>
-                  <div class="description-block margin-bottom">
-                    <div class="row" data-color="#fff"><i class="fa fa-sitemap fa-3x"></i></div>
-                    <h5 class="description-header">100+</h5>
-                    <span class="description-text">DEALER LOCATIONS</span>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col -->
-            </div>
-            <!-- /.row -->
-          </div>
-          <!-- /.box-body -->
-        </div>
-        <link rel="stylesheet" href="/static/js/plugins/jvectormap/jquery-jvectormap-2.0.3.css" >
-      </div>
-    </div>
-    <!-- third end -->
-
   </section>
 </template>
 <script>
@@ -171,7 +94,6 @@ import {stats} from '../../demo'
 const pluginURL = '/static/js/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js'
 const mapURL = '/static/js/plugins/jvectormap/jquery-jvectormap-world-mill.js'
 const mapURL2 = '/static/js/plugins/jvectormap/jquery-jvectormap-us-lcc.js'
-const mapURL3 = '/static/js/plugins/jvectormap/jquery-jvectormap-data-us-in-lcc-en.js'
 
 export default {
   name: 'Access',
@@ -423,30 +345,6 @@ export default {
             ]
           })
         })
-        window.jQuery.getScript(mapURL3, () => {
-          window.jQuery('#in-map-markers').vectorMap({
-            maxLevel: 1,
-            map: 'us-in_lcc_en',
-            backgroundColor: '#818181',
-            borderColor: '#818181',
-            borderOpacity: 0.25,
-            borderWidth: 1,
-            color: '#f4f3f0',
-            hoverColor: '#c9dfaf',
-            hoverOpacity: null,
-            markerStyle: {
-              initial: {
-                fill: '#F8E23B',
-                stroke: '#383f47'
-              }
-            },
-            markers: [
-              {latLng: [39.20, -86.10], name: 'Columbus'},
-              {latLng: [39.16, -86.53], name: 'Bloomington'},
-              {latLng: [39.80, -86.15], name: 'Indianapolis'}
-            ]
-          })
-        })
       })
     })
   }
@@ -459,12 +357,9 @@ export default {
 }
 
 #world-map-markers svg {
-  height: 400px;
-}
-#us-map-markers svg {
   height: 355px;
 }
-#in-map-markers svg {
+#us-map-markers svg {
   height: 355px;
 }
 .row.no-gutters {

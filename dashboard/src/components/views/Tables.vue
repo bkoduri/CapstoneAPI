@@ -1,11 +1,11 @@
 <template>
   <section class="content">
     <div class="row center-block">
-      <h2>Simple</h2>
+      <h2>Status</h2>
       <div class="col-md-12">
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Striped Full Width Table</h3>
+            <h3 class="box-title">Progress of IT tasks</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body no-padding table-responsive">
@@ -19,17 +19,17 @@
                 </tr>
                 <tr>
                   <td>1.</td>
-                  <td>Update software</td>
+                  <td>Software update</td>
                   <td>
                     <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                      <div class="progress-bar progress-bar-danger" style="width: 45%"></div>
                     </div>
                   </td>
-                  <td><span class="badge bg-red">55%</span></td>
+                  <td><span class="badge bg-red">45%</span></td>
                 </tr>
                 <tr>
                   <td>2.</td>
-                  <td>Clean database</td>
+                  <td>Database backups</td>
                   <td>
                     <div class="progress progress-xs">
                       <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
@@ -49,7 +49,7 @@
                 </tr>
                 <tr>
                   <td>4.</td>
-                  <td>Fix and squish bugs</td>
+                  <td>Bug fixes</td>
                   <td>
                     <div class="progress progress-xs progress-striped active">
                       <div class="progress-bar progress-bar-success" style="width: 90%"></div>
@@ -70,7 +70,7 @@
       <div class="col-md-12">
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Data Table With Full Features</h3>
+            <h3 class="box-title">Service History</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
@@ -84,104 +84,29 @@
               </div>
 
               <div class="row">
-                <div class="col-sm-12 table-responsive">
-                  <table aria-describedby="example1_info" role="grid" id="example1" class="table table-bordered table-striped dataTable">
+                <div class="col-sm-12 table-responsive" >
+                  <table class="table table-bordered table-striped dataTable">
                     <thead>
                       <tr role="row">
-                        <th aria-label="Rendering engine: activate to sort column descending" aria-sort="ascending" style="width: 167px;" colspan="1" rowspan="1" aria-controls="example1" tabindex="0" class="sorting_asc">Rendering engine</th>
-                        <th aria-label="Browser: activate to sort column ascending" style="width: 207px;" colspan="1" rowspan="1" aria-controls="example1" tabindex="0" class="sorting">Browser</th>
-                        <th aria-label="Platform(s): activate to sort column ascending" style="width: 182px;" colspan="1" rowspan="1" aria-controls="example1" tabindex="0" class="sorting">Platform(s)</th>
-                        <th aria-label="Engine version: activate to sort column ascending" style="width: 142px;" colspan="1" rowspan="1" aria-controls="example1" tabindex="0" class="sorting">Engine version</th>
-                        <th aria-label="CSS grade: activate to sort column ascending" style="width: 101px;" colspan="1" rowspan="1" aria-controls="example1" tabindex="0" class="sorting">CSS grade</th>
+                        <th style="width: 107px;" colspan="1" rowspan="1">Service ID</th>
+                        <th style="width: 207px;" colspan="1" rowspan="1">Service Date</th>
+                        <th style="width: 182px;" colspan="1" rowspan="1">Summary</th>
+                        <th style="width: 142px;" colspan="1" rowspan="1">Health Grade</th>
+                        <th style="width: 101px;" colspan="1" rowspan="1">Product ID</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr class="even" role="row">
-                        <td class="sorting_1">Blink</td>
-                        <td>Iridium  54.0</td>
-                        <td>GNU/Linux</td>
-                        <td>54</td>
-                        <td>A</td>
+                      <tr v-for="repo in service">
+                        <td >{{repo.service_id}}</td>
+                        <td>{{repo.service_date}}</td>
+                        <td>{{repo.summary}}</td>
+                        <td>{{repo.health_grade}}</td>
+                        <td>{{repo.pd_id}}</td>
                       </tr>
-                      <tr class="odd" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Firefox 1.0</td>
-                        <td>Win 98+ / OSX.2+</td>
-                        <td>1.7</td>
-                        <td>A</td>
-                      </tr>
-                      <tr class="even" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Firefox 1.5</td>
-                        <td>Win 98+ / OSX.2+</td>
-                        <td>1.8</td>
-                        <td>A</td>
-                      </tr>
-                      <tr class="odd" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Firefox 2.0</td>
-                        <td>Win 98+ / OSX.2+</td>
-                        <td>1.8</td>
-                        <td>A</td>
-                      </tr>
-                      <tr class="even" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Firefox 3.0</td>
-                        <td>Win 2k+ / OSX.3+</td>
-                        <td>1.9</td>
-                        <td>A</td>
-                      </tr>
-                      <tr class="odd" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Camino 1.0</td>
-                        <td>OSX.2+</td>
-                        <td>1.8</td>
-                        <td>A</td>
-                      </tr>
-                      <tr class="even" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Camino 1.5</td>
-                        <td>OSX.3+</td>
-                        <td>1.8</td>
-                        <td>A</td>
-                      </tr>
-                      <tr class="odd" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Netscape 7.2</td>
-                        <td>Win 95+ / Mac OS 8.6-9.2</td>
-                        <td>1.7</td>
-                        <td>A</td>
-                      </tr>
-                      <tr class="even" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Netscape Browser 8</td>
-                        <td>Win 98SE+</td>
-                        <td>1.7</td>
-                        <td>A</td>
-                      </tr>
-                      <tr class="odd" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Netscape Navigator 9</td>
-                        <td>Win 98+ / OSX.2+</td>
-                        <td>1.8</td>
-                        <td>A</td>
-                      </tr>
-                      <tr class="even" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Mozilla 1.0</td>
-                        <td>Win 95+ / OSX.1+</td>
-                        <td>1</td>
-                        <td>A</td>
-                      </tr>
+
                     </tbody>
                     <tfoot>
-                      <tr>
-                        <th colspan="1" rowspan="1">Rendering engine</th>
-                        <th colspan="1" rowspan="1">Browser</th>
-                        <th colspan="1" rowspan="1">Platform(s)</th>
-                        <th colspan="1" rowspan="1">Engine version</th>
-                        <th colspan="1" rowspan="1">CSS grade</th>
-                      </tr>
+
                     </tfoot>
                   </table>
                 </div>
@@ -200,10 +125,49 @@ import $ from 'jquery'
 // Require needed datatables modules
 require('datatables.net')
 require('datatables.net-bs')
+import axios from 'axios'
 
 export default {
   name: 'Tables',
+  data () {
+    return {
+      // githubUrl: 'https://api.github.com/search/repositories?q=language%3Ajavascript&sort=stars',
+      githubUrl: 'https://cors.io/?http://ec2-34-222-136-163.us-west-2.compute.amazonaws.com/api/serviceHistory.php',
+      service: [
+        {
+          'service_id': 1,
+          'pd_id': 3,
+          'service_date': '2018-07-14 17:44:10',
+          'summary': 'Replaced 2 parts that had rusted out',
+          'health_grade': '60'
+        }
+      ],
+      error: null
+    }
+  },
+  methods: {
+    callGitHub () {
+      axios.get(this.githubUrl)
+        .then(response => {
+          console.log('data Response:', response.data)
+
+          if (response.status !== 200) {
+            this.error = response.statusText
+            return
+          }
+
+          this.service = response.data
+          console.log('data Response1:', this.service[1])
+        })
+        .catch(error => {
+          // Request failed.
+          console.log('error', error.response)
+          this.error = error.response.statusText
+        })
+    }
+  },
   mounted() {
+    this.callGitHub()
     this.$nextTick(() => {
       $('#example1').DataTable()
     })

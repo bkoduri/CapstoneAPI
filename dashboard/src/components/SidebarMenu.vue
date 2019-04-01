@@ -7,10 +7,17 @@
         <span class="page">Dashboard</span>
       </a>
     </router-link>
-    <router-link tag="li" class="pageLink" to="/tables">
+    <router-link tag="li" class="pageLink" to="/repos">
       <a>
-        <i class="fa fa-table"></i>
-        <span class="page">Tables</span>
+        <i class="fa fa-bullseye"></i>
+        <span class="page">Applications</span>
+        <!-- <small class="label pull-right bg-green">AJAX</small> -->
+      </a>
+    </router-link>
+    <router-link tag="li" class="pageLink" to="/server">
+      <a>
+        <i class="fa fa-hdd-o"></i>
+        <span class="page">Servers</span>
       </a>
     </router-link>
 
@@ -30,50 +37,49 @@
     <li class="treeview">
       <a href="#">
         <i class="fa fa-folder-o"></i>
-        <span class="treeview-title">Files</span>
+        <span class="treeview-title">Bookmarks</span>
         <span class="pull-right-container pull-right">
           <i class="fa fa-angle-left fa-fw"></i>
         </span>
       </a>
       <ul class="treeview-menu">
         <li>
-          <a href="#">
-            <i class="fa fa-file-word-o"></i> Item 1
+          <a href="#" target="popup" onclick="window.open('https://console.dialogflow.com/api-client/demo/embedded/08fe23b1-af87-400c-9349-737982b3f54e','name','width=500,height=600')">
+            <i class="fa fa-money"></i> Get Reports
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class="fa fa-file-picture-o"></i> Item 2
+          <a href="#" target="popup" onclick="window.open('https://console.dialogflow.com/api-client/demo/embedded/a643b36c-349c-4aad-a805-39911d3d6166','name','width=500,height=600')">
+            <i class="fa fa-comment-o"></i> HR Buddy
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class="fa fa-file-pdf-o"></i> Item 3
+          <a href="https://finance.yahoo.com/quote/CMI/" target="_blank">
+            <i class="fa fa-money"></i> CMI Stock
+          </a>
+        </li>
+        <li>
+          <a href="https://www.cummins.com/news" target="_blank">
+            <i class="fa fa-newspaper-o"></i> Newsroom
           </a>
         </li>
       </ul>
     </li>
 
-    <li class="header">LOGS</li>
+    <li class="header">OPERATIONS</li>
+    <router-link tag="li" class="pageLink" to="/tables">
+      <a>
+        <i class="fa fa-table"></i>
+        <span class="page">Real-time Data</span>
+      </a>
+    </router-link>
     <router-link tag="li" class="pageLink" to="/access">
       <a>
         <i class="fa fa-book"></i>
-        <span class="page">Access</span>
+        <span class="page">Locations</span>
       </a>
     </router-link>
-    <router-link tag="li" class="pageLink" to="/server">
-      <a>
-        <i class="fa fa-hdd-o"></i>
-        <span class="page">Server</span>
-      </a>
-    </router-link>
-    <router-link tag="li" class="pageLink" to="/repos">
-      <a>
-        <i class="fa fa-heart"></i>
-        <span class="page">Repos</span>
-        <small class="label pull-right bg-green">AJAX</small>
-      </a>
-    </router-link>
+
 
     <li class="header">PAGES</li>
     <router-link tag="li" class="pageLink" to="/login">

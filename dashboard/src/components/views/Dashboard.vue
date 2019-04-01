@@ -5,16 +5,16 @@
     <div class="row">
       <div class="alert alert-success alert-dismissible">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-        <h4><i class="icon fa fa-check"></i> CoPilot is open source!</h4>
-        Click on icon to check it out on github. <a href="https://github.com/misterGF/CoPilot" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+        <h4><i class="icon fa fa-cogs"></i> Weekly Scheduled Maintenance</h4>
+        Systems will not be accessible from 1 am to 2 am EST on this Saturday.
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box">
           <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">CPU Traffic</span>
-            <span class="info-box-number">90<small>%</small></span>
+            <span class="info-box-text">Cloud Uptime</span>
+            <span class="info-box-number">99.8<small>%</small></span>
           </div>
           <!-- /.info-box-content -->
         </div>
@@ -23,11 +23,11 @@
       <!-- /.col -->
       <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box">
-          <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
+          <span class="info-box-icon bg-red"><i class="fa fa-server"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">Likes</span>
-            <span class="info-box-number">41,410</span>
+            <span class="info-box-text">Servers Provisioned</span>
+            <span class="info-box-number">1,410</span>
           </div>
           <!-- /.info-box-content -->
         </div>
@@ -40,11 +40,11 @@
 
       <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box">
-          <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
+          <span class="info-box-icon bg-green"><i class="fa fa-database"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">Sales</span>
-            <span class="info-box-number">760</span>
+            <span class="info-box-text">Data Collected</span>
+            <span class="info-box-number">960 <small>TB</small></span>
           </div>
           <!-- /.info-box-content -->
         </div>
@@ -53,11 +53,11 @@
       <!-- /.col -->
       <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box">
-          <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+          <span class="info-box-icon bg-yellow"><i class="fa fa-folder"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">New Members</span>
-            <span class="info-box-number">2,000</span>
+            <span class="info-box-text"><small>Active Applications</small></span>
+            <span class="info-box-number">2,048</span>
           </div>
           <!-- /.info-box-content -->
         </div>
@@ -74,20 +74,20 @@
           <div class="box-body">
             <div class="col-sm-6 col-xs-12">
               <p class="text-center">
-                <strong>Web Traffic Overview</strong>
+                <strong>Yearly Sales Overview</strong>
               </p>
               <canvas id="trafficBar" ></canvas>
             </div>
             <hr class="visible-xs-block">
             <div class="col-sm-6 col-xs-12">
               <p class="text-center">
-                <strong>Language Overview</strong>
+                <strong>2018 Sales Statistics</strong>
               </p>
               <canvas id="languagePie"></canvas>
             </div>
           </div>
         </div>
-        <small class="space"><b>Pro Tip</b> Don"t forget to star us on github!</small>
+        <small class="space"><b>Note</b> These statistics are updated at the end of every week.</small>
       </div>
     </div>
     <!-- /.row -->
@@ -96,17 +96,17 @@
     <div class="row">
       <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box bg-yellow">
-          <span class="info-box-icon"><i class="ion ion-ios-pricetag-outline"></i></span>
+          <span class="info-box-icon"><i class="fa fa-truck"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">Inventory</span>
-            <span class="info-box-number">5,200</span>
+            <span class="info-box-text">Sales</span>
+            <span class="info-box-number">830<small>M</small></span>
 
             <div class="progress">
-              <div class="progress-bar" style="width: 50%"></div>
+              <div class="progress-bar" style="width: 10%"></div>
             </div>
                 <span class="progress-description">
-                  50% Increase
+                  10% Increase
                 </span>
           </div>
           <!-- /.info-box-content -->
@@ -114,11 +114,11 @@
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box bg-green">
-          <span class="info-box-icon"><i class="ion ion-ios-heart-outline"></i></span>
+          <span class="info-box-icon"><i class="fa fa-ticket"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">Mentions</span>
-            <span class="info-box-number">92,050</span>
+            <span class="info-box-text">Service Tickets</span>
+            <span class="info-box-number">12,050</span>
 
             <div class="progress">
               <div class="progress-bar" style="width: 20%"></div>
@@ -132,17 +132,17 @@
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box bg-red">
-          <span class="info-box-icon"><i class="ion ion-ios-cloud-download-outline"></i></span>
+          <span class="info-box-icon"><i class="fa fa-thumbs-o-up"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">Downloads</span>
-            <span class="info-box-number">114,381</span>
+            <span class="info-box-text">Customer Satisfaction</span>
+            <span class="info-box-number">93<small>%</small></span>
 
             <div class="progress">
-              <div class="progress-bar" style="width: 70%"></div>
+              <div class="progress-bar" style="width: 25%"></div>
             </div>
                 <span class="progress-description">
-                  70% Increase
+                  25% Increase
                 </span>
           </div>
           <!-- /.info-box-content -->
@@ -150,11 +150,11 @@
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box bg-aqua">
-          <span class="info-box-icon"><i class="ion-ios-chatbubble-outline"></i></span>
+          <span class="info-box-icon"><i class="fa fa-group"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">Direct Messages</span>
-            <span class="info-box-number">163,921</span>
+            <span class="info-box-text">New Customers</span>
+            <span class="info-box-number">3,921</span>
 
             <div class="progress">
               <div class="progress-bar" style="width: 40%"></div>
@@ -206,14 +206,14 @@ export default {
         data: {
           labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
           datasets: [{
-            label: 'CoPilot',
+            label: 'Engines',
             fill: false,
             borderColor: '#284184',
             pointBackgroundColor: '#284184',
             backgroundColor: 'rgba(0, 0, 0, 0)',
             data: this.coPilotNumbers
           }, {
-            label: 'Personal Site',
+            label: 'Power Systems',
             borderColor: '#4BC0C0',
             pointBackgroundColor: '#4BC0C0',
             backgroundColor: 'rgba(0, 0, 0, 0)',
@@ -242,11 +242,11 @@ export default {
       var pieConfig = {
         type: 'pie',
         data: {
-          labels: ['HTML', 'JavaScript', 'CSS'],
+          labels: ['Engine', 'Power Systems', 'Components', 'Distribution', 'Electrified Power'],
           datasets: [{
-            data: [56.6, 37.7, 4.1],
-            backgroundColor: ['#00a65a', '#f39c12', '#00c0ef'],
-            hoverBackgroundColor: ['#00a65a', '#f39c12', '#00c0ef']
+            data: [26.6, 24.7, 22.7, 20.5, 5.5],
+            backgroundColor: ['#c1222a', '#00a65a', '#4286f4', '#f39c12', '#00c0ef'],
+            hoverBackgroundColor: ['#c1222a', '#00a65a', '#4286f4', '#f39c12', '#00c0ef']
           }]
         },
         options: {

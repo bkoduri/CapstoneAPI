@@ -14,7 +14,9 @@
           <span class="input-group-addon"><i class="fa fa-lock"></i></span>
           <input class="form-control" name="password" placeholder="Password" type="password" v-model="password">
         </div>
-        <button type="submit" v-bind:class="'btn btn-primary btn-lg ' + loading">Submit</button>
+        <a href="http://ec2-34-211-228-116.us-west-2.compute.amazonaws.com" class="btn btn-default">Employee Login</a>
+        <a href="http://ec2-34-222-136-163.us-west-2.compute.amazonaws.com/index.html" class="btn btn-default">Customer Login</a>
+        <!-- <button type="submit" v-bind:class="'btn btn-primary btn-lg ' + loading">Submit</button> -->
       </form>
 
       <!-- errors -->
@@ -102,14 +104,14 @@ export default {
 
 <style>
 #login {
-  padding: 10em;
+  padding: 3em;
 }
 
 html,
 body,
 .container-table {
   height: 100%;
-  background-color: #282b30 !important;
+  background-color: #f2373b !important;
 }
 .container-table {
   display: table;

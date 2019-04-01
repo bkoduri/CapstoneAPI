@@ -7,7 +7,7 @@
           <div class="box box-info">
             <!-- Input Addons -->
             <div class="box-header with-border">
-              <h3 class="box-title">Inputs</h3>
+              <h3 class="box-title">Personal Details</h3>
             </div>
 
             <div class="box-body">
@@ -30,62 +30,32 @@
               </div>
               <br />
               <div class="input-group">
-                <span class="input-group-addon">
-                  <i class="fa fa-fw fa-usd" aria-hidden="true"></i>
-                </span>
-                <input class="form-control" type="text">
-                <span class="input-group-addon">.00</span>
-              </div>
-              <br />
-
-              <!-- with icons from font awesome -->
-              <h4>With icons</h4>
-              <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-fw fa-envelope"></i></span>
                 <input class="form-control" placeholder="Email" type="email">
               </div>
               <br />
-              <div class="input-group">
-                <input class="form-control" type="text">
-                <span class="input-group-addon"><i class="fa fa-fw fa-check"></i></span>
-              </div>
-              <br>
-
-              <!-- Success/Error heads up input -->
-              <h4>With border indicator</h4>
-              <div class="form-group has-success">
-                <label class="control-label" for="inputSuccess"><i class="fa fa-fw fa-check"></i> Input with success</label>
-                <input class="form-control" id="inputSuccess" placeholder="Enter ..." type="text">
-                <span class="help-block">Help block with success</span>
-              </div>
-              <br />
-              <div class="form-group has-error">
-                <label class="control-label" for="inputError"><i class="fa fa-fw fa-times-circle-o"></i> Input with error</label>
-                <input class="form-control" id="inputError" placeholder="Enter ..." type="text">
-                <span class="help-block">Help block with error</span>
-              </div>
 
               <!-- select examples -->
-              <h4>Select Options</h4>
+              <h4>Select Location</h4>
               <div class="form-group">
                 <label>Select</label>
                 <select class="form-control">
-                  <option>option 1</option>
-                  <option>option 2</option>
-                  <option>option 3</option>
-                  <option>option 4</option>
-                  <option>option 5</option>
+                  <option>Columbus</option>
+                  <option>Bloomington</option>
+                  <option>Chicago</option>
+                  <option>Dallas</option>
+                  <option>Austin</option>
                 </select>
               </div>
               <br />
               <div class="form-group">
-                <label>Select Multiple</label>
+                <label>Select contact preferences</label>
                 <select multiple="" class="form-control">
-                  <option>option 1</option>
-                  <option>option 2</option>
-                  <option>option 3</option>
-                  <option>option 4</option>
-                  <option>option 5</option>
+                  <option>Email</option>
+                  <option>Mobile</option>
+                  <option>Land phone</option>
+                  <option>Skype</option>
+                  <option>Slack</option>
                 </select>
               </div>
 

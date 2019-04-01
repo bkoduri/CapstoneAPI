@@ -26,17 +26,17 @@ const routes = [
         alias: '',
         component: DashboardView,
         name: 'Dashboard',
-        meta: {description: 'Overview of environment'}
+        meta: {description: 'Overview of customer support environment'}
       }, {
         path: 'tables',
         component: TablesView,
         name: 'Tables',
-        meta: {description: 'Simple and advance table in CoPilot'}
+        meta: {description: 'Visualize Customer Data in tabular format'}
       }, {
         path: 'tasks',
         component: TasksView,
-        name: 'Tasks',
-        meta: {description: 'Tasks page in the form of a timeline'}
+        name: 'Timeline',
+        meta: {description: 'Tasks and posts in the form of a timeline'}
       }, {
         path: 'setting',
         component: SettingView,
@@ -45,18 +45,18 @@ const routes = [
       }, {
         path: 'access',
         component: AccessView,
-        name: 'Access',
-        meta: {description: 'Example of using maps'}
+        name: 'Customer Map',
+        meta: {description: 'Shows customer presence across the globe'}
       }, {
         path: 'server',
         component: ServerView,
         name: 'Servers',
-        meta: {description: 'List of our servers', requiresAuth: true}
+        meta: {description: 'List of our servers'}
       }, {
         path: 'repos',
         component: ReposView,
-        name: 'Repository',
-        meta: {description: 'List of popular javascript repos'}
+        name: 'Intranet Portal',
+        meta: {description: 'List of popular self-service Applications'}
       }
     ]
   }, {

@@ -33,39 +33,62 @@ export const servers = [{
 }]
 
 export const stats = [{
-  header: '8390',
-  text: 'Visitors'
+  header: '15000+',
+  text: 'Global Customers'
 }, {
-  header: '30%',
-  text: 'Referrals'
+  header: '500',
+  text: 'Distributor Facilities'
 }, {
-  header: '70%',
-  text: 'Organic'
+  header: '7,500',
+  text: 'Dealer Locations'
+}, {
+  header: '58,600',
+  text: 'Employees'
 }]
 
 export const timeline = [{
   icon: 'fa-envelope',
   color: 'blue',
-  title: 'Write short novel',
-  time: moment().endOf('day').fromNow(),
-  body: 'Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem plugg dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle quora plaxo ideeli hulu weebly balihoo...',
+  title: 'Annual review',
+  time: moment().endOf('week').fromNow(),
+  body: 'Annual review session will be held at the conference room on this weekend. Please be seated at 2 pm.',
   buttons: [{
     type: 'primary',
-    message: 'Read more',
-    href: 'https://github.com/misterGF/CoPilot',
+    message: 'Add to Calendar',
+    href: 'http://ec2-34-211-228-116.us-west-2.compute.amazonaws.com',
+    target: '_blank'
+  }]
+},
+{
+  icon: 'fa-envelope',
+  color: 'green',
+  title: 'Send Minutes of Meeting',
+  time: moment().endOf('day').fromNow(),
+  body: 'Please draft the Minutes of Meeting of weekly status meeting and send it to your supervisor. Clearly mention actions pending and whom they are assigned to.',
+  buttons: [{
+    type: 'primary',
+    message: 'Submit here',
+    href: 'http://ec2-34-211-228-116.us-west-2.compute.amazonaws.com',
     target: '_blank'
   }]
 },
 {
   icon: 'fa-user',
   color: 'yellow',
-  title: 'Sarah Young accepted your friend request',
+  title: 'Your IT support ticket has been resolved',
   time: moment('20150620', 'MMM Do YY').fromNow()
+},
+{
+  icon: 'fa-cogs',
+  color: 'red',
+  title: 'Windows 10 upgrade for all the systems will be released by the end of the month. Please back up your data.',
+  time: moment('20140620', 'MMM Do YY').fromNow()
 },
 {
   icon: 'fa-camera',
   color: 'purple',
-  title: 'Watch a youTube video',
+  title: 'Career Paths for Cummins Service Technicans',
   time: moment('20130620', 'YYYYMMDD').fromNow(),
-  body: '<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/8aGhZQkoFbQ" frameborder="0" allowfullscreen></iframe></div>'
+
+  body: '<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/TXMIYS6MLVw" frameborder="0" allowfullscreen></iframe></div>'
 }]
