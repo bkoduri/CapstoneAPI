@@ -88,7 +88,6 @@
                   <table class="table table-bordered table-striped dataTable">
                     <thead>
                       <tr role="row">
-                        // <th style="width: 107px;" colspan="1" rowspan="1">Sl. Number</th>
                         <th style="width: 207px;" colspan="1" rowspan="1">Date</th>
                         <th style="width: 182px;" colspan="1" rowspan="1">Vaccine</th>
                         <th style="width: 142px;" colspan="1" rowspan="1">Patient ID</th>
@@ -97,7 +96,6 @@
                     </thead>
                     <tbody>
                       <tr v-for="arr in service">
-                        // <td >{{repo.imm_id}}</td>
                         <td>{{arr.resource.date}}</td>
                         <td>{{arr.resource.vaccineCode.text}}</td>
                         <td>{{arr.resource.patient.reference}}</td>
