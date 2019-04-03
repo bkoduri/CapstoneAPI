@@ -138,7 +138,7 @@ export default {
           'resource.date': '2018-07-14',
           'resource.vaccineCode.text': 'Menningocal',
           'resource.patient.reference': '60',
-          'resource.site.text':'Intramuscular'
+          'resource.site.text': 'Intramuscular'
         }
       ],
       error: null
