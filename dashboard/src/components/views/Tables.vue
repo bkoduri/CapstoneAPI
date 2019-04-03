@@ -88,20 +88,20 @@
                   <table class="table table-bordered table-striped dataTable">
                     <thead>
                       <tr role="row">
-                        <th style="width: 107px;" colspan="1" rowspan="1">Test ID</th>
-                        <th style="width: 207px;" colspan="1" rowspan="1">Test Date</th>
-                        <th style="width: 182px;" colspan="1" rowspan="1">Summary</th>
-                        <th style="width: 142px;" colspan="1" rowspan="1">Health Grade</th>
-                        <th style="width: 101px;" colspan="1" rowspan="1">Patient ID</th>
+                        // <th style="width: 107px;" colspan="1" rowspan="1">Sl. Number</th>
+                        <th style="width: 207px;" colspan="1" rowspan="1">Date</th>
+                        <th style="width: 182px;" colspan="1" rowspan="1">Vaccine</th>
+                        <th style="width: 142px;" colspan="1" rowspan="1">Patient ID</th>
+                        <th style="width: 101px;" colspan="1" rowspan="1">Method</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr v-for="repo in service">
-                        <td >{{repo.service_id}}</td>
-                        <td>{{repo.service_date}}</td>
-                        <td>{{repo.summary}}</td>
-                        <td>{{repo.health_grade}}</td>
-                        <td>{{repo.pd_id}}</td>
+                      <tr v-for="arr in service">
+                        // <td >{{repo.imm_id}}</td>
+                        <td>{{arr.resource.date}}</td>
+                        <td>{{arr.resource.vaccineCode.text}}</td>
+                        <td>{{arr.resource.patient.reference}}</td>
+                        <td>{{arr.resource.site.text}}</td>
                       </tr>
 
                     </tbody>
@@ -132,14 +132,13 @@ export default {
   data () {
     return {
       // githubUrl: 'https://api.github.com/search/repositories?q=language%3Ajavascript&sort=stars',
-      githubUrl: 'https://cors.io/?http://ec2-34-222-136-163.us-west-2.compute.amazonaws.com/api/serviceHistory.php',
+      githubUrl: 'https://cors.io/?http://hapi.fhir.org/baseDstu3/Immunization?patient=1643345&_format=json&_pretty=true',
       service: [
         {
-          'service_id': 1,
-          'pd_id': 3,
-          'service_date': '2018-07-14 17:44:10',
-          'summary': 'Replaced 2 parts that had rusted out',
-          'health_grade': '60'
+          'resource.date': '2018-07-14',
+          'resource.vaccineCode.text': 'Menningocal',
+          'resource.patient.reference': '60',
+          'resource.site.text':'Intramuscular'
         }
       ],
       error: null
@@ -156,7 +155,7 @@ export default {
             return
           }
 
-          this.service = response.data
+          this.service = response.data.entry
           console.log('data Response1:', this.service[1])
         })
         .catch(error => {
