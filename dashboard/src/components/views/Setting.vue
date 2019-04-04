@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h1 class="text-center">New Patient Enrolment</h1>
+    <h1 class="text-center">New Patient Enrollment</h1>
     <section class="content">
       <div class="row">
         <div class="col-md-12">
           <div class="box box-info">
             <!-- Input Addons -->
             <div class="box-header with-border">
-              <h3 class="box-title">Personal Details</h3>
+              <h3 class="box-title">Personal Details - DOB, Name, Address</h3>
             </div>
 
             <div class="box-body">
@@ -26,21 +26,21 @@
                 <span class="input-group-addon">
                   <i class="fa fa-fw fa-at" aria-hidden="true"></i>
                 </span>
-                <input class="form-control" placeholder="Username" type="text">
+                <input class="form-control" placeholder="Patient Name" type="text">
               </div>
               <br />
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-fw fa-envelope"></i></span>
-                <input class="form-control" placeholder="Email" type="email">
+                <input class="form-control" placeholder="Mailing Address" type="email">
               </div>
               <br />
 
               <!-- select examples -->
-              <h4>Select Location</h4>
+              <h4>Select Hospital Location</h4>
               <div class="form-group">
                 <label>Select</label>
                 <select class="form-control">
-                  <option>Columbus</option>
+                  <option>Indianapolis</option>
                   <option>Bloomington</option>
                   <option>Chicago</option>
                   <option>Dallas</option>
@@ -54,8 +54,6 @@
                   <option>Email</option>
                   <option>Mobile</option>
                   <option>Land phone</option>
-                  <option>Skype</option>
-                  <option>Slack</option>
                 </select>
               </div>
 

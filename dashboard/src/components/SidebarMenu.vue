@@ -34,37 +34,7 @@
         <span class="page">Enrollment</span>
       </a>
     </router-link>
-    <li class="treeview">
-      <a href="#">
-        <i class="fa fa-folder-o"></i>
-        <span class="treeview-title">Bookmarks</span>
-        <span class="pull-right-container pull-right">
-          <i class="fa fa-angle-left fa-fw"></i>
-        </span>
-      </a>
-      <ul class="treeview-menu">
-        <li>
-          <a href="#" target="popup" onclick="window.open('https://console.dialogflow.com/api-client/demo/embedded/08fe23b1-af87-400c-9349-737982b3f54e','name','width=500,height=600')">
-            <i class="fa fa-money"></i> Get Reports
-          </a>
-        </li>
-        <li>
-          <a href="#" target="popup" onclick="window.open('https://console.dialogflow.com/api-client/demo/embedded/a643b36c-349c-4aad-a805-39911d3d6166','name','width=500,height=600')">
-            <i class="fa fa-comment-o"></i> HR Buddy
-          </a>
-        </li>
-        <li>
-          <a href="https://finance.yahoo.com/quote/CMI/" target="_blank">
-            <i class="fa fa-money"></i> CMI Stock
-          </a>
-        </li>
-        <li>
-          <a href="https://www.cummins.com/news" target="_blank">
-            <i class="fa fa-newspaper-o"></i> Newsroom
-          </a>
-        </li>
-      </ul>
-    </li>
+  
 
     <li class="header">OPERATIONS</li>
     <router-link tag="li" class="pageLink" to="/tables">
