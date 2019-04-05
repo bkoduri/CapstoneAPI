@@ -174,7 +174,7 @@ export default {
           'resource.code.coding.display': 'Dust Mites',
           'resource.reaction.description': 'Breathing difficulty , Asthma'
         }
-      ]
+      ],
       error: null
     }
   },
