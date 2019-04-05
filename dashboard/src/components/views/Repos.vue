@@ -66,7 +66,7 @@ export default {
     return {
       // githubUrl: 'https://api.github.com/search/repositories?q=language%3Ajavascript&sort=stars',
       // githubUrl: 'https://api.myjson.com/bins/cm71a',
-      githubUrl: 'https://api.myjson.com/bins/rc0f8',
+      githubUrl: 'https://api.myjson.com/bins/b1c2g',
       response: null,
       error: null,
       snUrl: 'https://dev71959.service-now.com/api/now/table/kb_knowledge?sysparm_query=author%3Djavascript%3Ags.getUserID()',
