@@ -10,7 +10,7 @@
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box">
-          <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+          <span class="info-box-icon bg-aqua"><i class="fa fa-wheelchair"></i></span>
 
           <div class="info-box-content">
             <span class="info-box-text">Patients in ER</span>
@@ -23,7 +23,7 @@
       <!-- /.col -->
       <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box">
-          <span class="info-box-icon bg-red"><i class="fa fa-server"></i></span>
+          <span class="info-box-icon bg-red"><i class="fa fa-user-md"></i></span>
 
           <div class="info-box-content">
             <span class="info-box-text">Doctors on Duty</span>
@@ -40,11 +40,11 @@
 
       <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box">
-          <span class="info-box-icon bg-green"><i class="fa fa-database"></i></span>
+          <span class="info-box-icon bg-green"><i class="	fa fa-stethoscope"></i></span>
 
           <div class="info-box-content">
             <span class="info-box-text">Nurses on Duty</span>
-            <span class="info-box-number">10</span>
+            <span class="info-box-number">28</span>
           </div>
           <!-- /.info-box-content -->
         </div>
@@ -53,7 +53,7 @@
       <!-- /.col -->
       <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box">
-          <span class="info-box-icon bg-yellow"><i class="fa fa-folder"></i></span>
+          <span class="info-box-icon bg-yellow"><i class="fa fa-bed"></i></span>
 
           <div class="info-box-content">
             <span class="info-box-text"><small>Avilable Beds</small></span>
@@ -96,11 +96,11 @@
     <div class="row">
       <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box bg-yellow">
-          <span class="info-box-icon"><i class="fa fa-truck"></i></span>
+          <span class="info-box-icon"><i class="fa fa-dollar"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">Inventory</span>
-            <span class="info-box-number">3<small>M</small></span>
+            <span class="info-box-text">Total Payments</span>
+            <span class="info-box-number">1.2<small>M</small></span>
 
             <div class="progress">
               <div class="progress-bar" style="width: 10%"></div>
@@ -117,7 +117,7 @@
           <span class="info-box-icon"><i class="fa fa-ticket"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">Service Requests</span>
+            <span class="info-box-text">Invoices Generated</span>
             <span class="info-box-number">2,050</span>
 
             <div class="progress">
@@ -242,7 +242,7 @@ export default {
       var pieConfig = {
         type: 'pie',
         data: {
-          labels: ['Road Accidents', 'Injury', 'Burns', 'Electrification', 'Animal Bites'],
+          labels: ['Road Accidents', 'Sprains', 'Burns', 'Broken Bones', 'Chest Pain'],
           datasets: [{
             data: [26.6, 24.7, 22.7, 20.5, 5.5],
             backgroundColor: ['#c1222a', '#00a65a', '#4286f4', '#f39c12', '#00c0ef'],
