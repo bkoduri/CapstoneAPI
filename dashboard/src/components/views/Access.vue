@@ -385,7 +385,7 @@ export default {
               }
             },
             markers: [
-              {latLng: [39.20, -86.10], name: 'Columbus'},
+              {latLng: [39.20, -86.10], name: 'Bloomington'},
               {latLng: [32.16, -96.73], name: 'Dallas'},
               {latLng: [45.50, -122.63], name: 'Portland'},
               {latLng: [18.58, 73.83], name: 'Pune'},
@@ -417,7 +417,7 @@ export default {
               multiMap.defaultProjection + '-en.js'
             },
             markers: [
-              {latLng: [39.20, -86.10], name: 'Columbus'},
+              {latLng: [39.20, -86.10], name: 'Bloomington'},
               {latLng: [32.16, -96.73], name: 'Dallas'},
               {latLng: [45.50, -122.63], name: 'Portland'}
             ]
