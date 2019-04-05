@@ -110,6 +110,7 @@
                 </div>
               </div>
 
+              <h3 class="box-title">Allergy History</h3>
               <div class="row">
                 <div class="col-sm-12 table-responsive" >
                   <table class="table table-bordered table-striped dataTable">
@@ -125,8 +126,8 @@
                       <tr v-for="arr in allergies">
                         <td>{{arr.resource.assertedDate}}</td>
                         <td>{{arr.resource['category'][0]}}</td>
-                        <td>{{arr.resource.code.coding.display}}</td>
-                        <td>{{arr.resource.reaction.description}}</td>
+                        <td>{{arr.resource.code['coding'][0].display}}</td>
+                        <td>{{arr.resource['reaction'][0].description}}</td>
                       </tr>
 
                     </tbody>
