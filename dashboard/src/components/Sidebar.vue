@@ -11,10 +11,10 @@
         </div>
         <div class="pull-left info">
           <div>
-            <p class="white">{{ displayName }}</p>
+            <p class="white">Dr. {{ displayName }}</p>
           </div>
           <a href="javascript:;">
-            <i class="fa fa-circle text-success"></i> Online
+            <i class="fa fa-plus-square text-success"></i> ER Specialist
           </a>
         </div>
       </div>

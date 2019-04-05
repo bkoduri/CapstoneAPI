@@ -130,7 +130,7 @@ export default {
   data () {
     return {
       // githubUrl: 'https://api.github.com/search/repositories?q=language%3Ajavascript&sort=stars',
-      githubUrl: 'https://cors.io/?http://hapi.fhir.org/baseDstu3/Immunization?patient=1643345&_format=json&_pretty=true',
+      githubUrl: 'https://fa2oblaam5.execute-api.us-east-1.amazonaws.com/hapi',
       service: [
         {
           'resource.date': '2018-07-14',

@@ -1,17 +1,36 @@
 <template>
   <ul class="sidebar-menu">
-    <li class="header">TOOLS</li>
+    <li class="header">ER Care</li>
     <router-link tag="li" class="pageLink" to="/">
       <a>
         <i class="fa fa-desktop"></i>
-        <span class="page">Dashboard</span>
+        <span class="page">ER Dashboard</span>
+      </a>
+    </router-link>
+    <router-link tag="li" class="pageLink" to="/tables">
+      <a>
+        <i class="fa fa-table"></i>
+        <span class="page">Patient Data</span>
+      </a>
+    </router-link>
+    <router-link tag="li" class="pageLink" to="/setting">
+      <a>
+        <i class="fa fa-cog"></i>
+        <span class="page">Patient Enrollment</span>
+      </a>
+    </router-link>
+
+    <li class="header">Employee Tools</li>
+    <router-link tag="li" class="pageLink" to="/tasks">
+      <a>
+        <i class="fa fa-tasks"></i>
+        <span class="page">Tasks</span>
       </a>
     </router-link>
     <router-link tag="li" class="pageLink" to="/repos">
       <a>
         <i class="fa fa-bullseye"></i>
         <span class="page">Applications</span>
-        <!-- <small class="label pull-right bg-green">AJAX</small> -->
       </a>
     </router-link>
     <router-link tag="li" class="pageLink" to="/server">
@@ -20,35 +39,13 @@
         <span class="page">Servers</span>
       </a>
     </router-link>
-
-    <li class="header">ME</li>
-    <router-link tag="li" class="pageLink" to="/tasks">
-      <a>
-        <i class="fa fa-tasks"></i>
-        <span class="page">Tasks</span>
-      </a>
-    </router-link>
-    <router-link tag="li" class="pageLink" to="/setting">
-      <a>
-        <i class="fa fa-cog"></i>
-        <span class="page">Enrollment</span>
-      </a>
-    </router-link>
-  
-
-    <li class="header">OPERATIONS</li>
-    <router-link tag="li" class="pageLink" to="/tables">
-      <a>
-        <i class="fa fa-table"></i>
-        <span class="page">Real-time Data</span>
-      </a>
-    </router-link>
     <router-link tag="li" class="pageLink" to="/access">
       <a>
         <i class="fa fa-book"></i>
         <span class="page">Locations</span>
       </a>
     </router-link>
+
 
 
     <li class="header">PAGES</li>

@@ -14,8 +14,7 @@
           <span class="input-group-addon"><i class="fa fa-lock"></i></span>
           <input class="form-control" name="password" placeholder="Password" type="password" v-model="password">
         </div>
-        <a href="http://ec2-34-211-228-116.us-west-2.compute.amazonaws.com" class="btn btn-default">Employee Login</a>
-        <a href="http://ec2-34-222-136-163.us-west-2.compute.amazonaws.com/index.html" class="btn btn-default">Customer Login</a>
+        <a href="http://ec2-3-208-32-110.compute-1.amazonaws.com/" class="btn btn-default">Employee Login</a>
         <!-- <button type="submit" v-bind:class="'btn btn-primary btn-lg ' + loading">Submit</button> -->
       </form>
 
