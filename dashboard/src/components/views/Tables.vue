@@ -124,7 +124,7 @@
                     <tbody>
                       <tr v-for="arr in allergies">
                         <td>{{arr.resource.assertedDate}}</td>
-                        <td>{{arr.resource.category}}</td>
+                        <td>{{arr.resource['category'][0]}}</td>
                         <td>{{arr.resource.code.coding.display}}</td>
                         <td>{{arr.resource.reaction.description}}</td>
                       </tr>
