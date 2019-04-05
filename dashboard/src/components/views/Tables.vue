@@ -88,10 +88,10 @@
                   <table class="table table-bordered table-striped dataTable">
                     <thead>
                       <tr role="row">
-                        <th style="width: 207px;" colspan="1" rowspan="1">Date</th>
+                        <th style="width: 177px;" colspan="1" rowspan="1">Date</th>
                         <th style="width: 182px;" colspan="1" rowspan="1">Vaccine</th>
                         <th style="width: 142px;" colspan="1" rowspan="1">Patient ID</th>
-                        <th style="width: 101px;" colspan="1" rowspan="1">Method</th>
+                        <th style="width: 131px;" colspan="1" rowspan="1">Method</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -116,10 +116,10 @@
                   <table class="table table-bordered table-striped dataTable">
                     <thead>
                       <tr role="row">
-                        <th style="width: 207px;" colspan="1" rowspan="1">Date</th>
+                        <th style="width: 177px;" colspan="1" rowspan="1">Date</th>
                         <th style="width: 182px;" colspan="1" rowspan="1">category</th>
                         <th style="width: 142px;" colspan="1" rowspan="1">Allergy</th>
-                        <th style="width: 101px;" colspan="1" rowspan="1">Reaction</th>
+                        <th style="width: 131px;" colspan="1" rowspan="1">Reaction</th>
                       </tr>
                     </thead>
                     <tbody>
