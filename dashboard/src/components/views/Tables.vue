@@ -45,7 +45,7 @@
                       <div class="progress-bar progress-bar-success" style="width: 30%"></div>
                     </div>
                   </td>
-                  <td><span class="badge bg-light-green">30%</span></td>
+                  <td><span class="badge bg-green">30%</span></td>
                 </tr>
                 <tr>
                   <td>4.</td>
@@ -70,7 +70,7 @@
       <div class="col-md-12">
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Medical History</h3>
+            <h3 class="box-title">Immunization History</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
@@ -109,6 +109,33 @@
                   </table>
                 </div>
               </div>
+
+              <div class="row">
+                <div class="col-sm-12 table-responsive" >
+                  <table class="table table-bordered table-striped dataTable">
+                    <thead>
+                      <tr role="row">
+                        <th style="width: 207px;" colspan="1" rowspan="1">Date</th>
+                        <th style="width: 182px;" colspan="1" rowspan="1">category</th>
+                        <th style="width: 142px;" colspan="1" rowspan="1">Allergy</th>
+                        <th style="width: 101px;" colspan="1" rowspan="1">Reaction</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr v-for="arr in allergies">
+                        <td>{{arr.resource.assertedDate}}</td>
+                        <td>{{arr.resource.category}}</td>
+                        <td>{{arr.resource.code.coding.display}}</td>
+                        <td>{{arr.resource.reaction.description}}</td>
+                      </tr>
+
+                    </tbody>
+                    <tfoot>
+
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
             </div>
             <!-- /.box-body -->
           </div>
@@ -131,6 +158,7 @@ export default {
     return {
       // githubUrl: 'https://api.github.com/search/repositories?q=language%3Ajavascript&sort=stars',
       githubUrl: 'https://fa2oblaam5.execute-api.us-east-1.amazonaws.com/hapi',
+      allergyurl: 'https://9bzu30wdjj.execute-api.us-east-1.amazonaws.com/allergies',
       service: [
         {
           'resource.date': '2018-07-14',
@@ -139,6 +167,14 @@ export default {
           'resource.site.text': 'Intramuscular'
         }
       ],
+      allergies: [
+        {
+          'resource.assertedDate': '2012-05-24',
+          'resource.category': 'Environment',
+          'resource.code.coding.display': 'Dust Mites',
+          'resource.reaction.description': 'Breathing difficulty , Asthma'
+        }
+      ]
       error: null
     }
   },
@@ -161,10 +197,30 @@ export default {
           console.log('error', error.response)
           this.error = error.response.statusText
         })
+    },
+    callAllergy () {
+      axios.get(this.allergyurl)
+        .then(response => {
+          console.log('data Response:', response.data)
+
+          if (response.status !== 200) {
+            this.error = response.statusText
+            return
+          }
+
+          this.allergies = response.data.entry
+          console.log('data Response1:', this.allergies[1])
+        })
+        .catch(error => {
+          // Request failed.
+          console.log('error', error.response)
+          this.error = error.response.statusText
+        })
     }
   },
   mounted() {
     this.callGitHub()
+    this.callAllergy()
     this.$nextTick(() => {
       $('#example1').DataTable()
     })
