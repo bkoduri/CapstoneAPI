@@ -56,6 +56,8 @@
                   <option>Land phone</option>
                 </select>
               </div>
+              <br>
+              <button type="button" class="btn btn-success">Submit</button>
 
               <!-- /input-group -->
             </div>
