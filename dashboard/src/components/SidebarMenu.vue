@@ -29,7 +29,7 @@
         </span>
       </a>
       <ul class="treeview-menu">
-        <li class="page">Employee Tools</li>
+        <li style="color:white;">Employee Tools</li>
         <router-link tag="li" class="pageLink" to="/tasks">
           <a>
             <i class="fa fa-tasks"></i>
@@ -55,7 +55,7 @@
           </a>
         </router-link>
 
-        <li class="page">PAGES</li>
+        <li style="color:white;">PAGES</li>
         <router-link tag="li" class="pageLink" to="/login">
           <a>
             <i class="fa fa-circle-o text-yellow"></i>
