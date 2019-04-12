@@ -20,47 +20,54 @@
       </a>
     </router-link>
 
-    <li class="header">Employee Tools</li>
-    <router-link tag="li" class="pageLink" to="/tasks">
-      <a>
-        <i class="fa fa-tasks"></i>
-        <span class="page">Tasks</span>
+    <li class="treeview">
+      <a href="#">
+        <i class="fa fa-folder-o"></i>
+        <span class="treeview-title">Extra Features</span>
+        <span class="pull-right-container pull-right">
+          <i class="fa fa-angle-left fa-fw"></i>
+        </span>
       </a>
-    </router-link>
-    <router-link tag="li" class="pageLink" to="/repos">
-      <a>
-        <i class="fa fa-bullseye"></i>
-        <span class="page">Applications</span>
-      </a>
-    </router-link>
-    <router-link tag="li" class="pageLink" to="/server">
-      <a>
-        <i class="fa fa-hdd-o"></i>
-        <span class="page">Servers</span>
-      </a>
-    </router-link>
-    <router-link tag="li" class="pageLink" to="/access">
-      <a>
-        <i class="fa fa-book"></i>
-        <span class="page">Locations</span>
-      </a>
-    </router-link>
+      <li class="header">Employee Tools</li>
+      <router-link tag="li" class="pageLink" to="/tasks">
+        <a>
+          <i class="fa fa-tasks"></i>
+          <span class="page">Tasks</span>
+        </a>
+      </router-link>
+      <router-link tag="li" class="pageLink" to="/repos">
+        <a>
+          <i class="fa fa-bullseye"></i>
+          <span class="page">Applications</span>
+        </a>
+      </router-link>
+      <router-link tag="li" class="pageLink" to="/server">
+        <a>
+          <i class="fa fa-hdd-o"></i>
+          <span class="page">Servers</span>
+        </a>
+      </router-link>
+      <router-link tag="li" class="pageLink" to="/access">
+        <a>
+          <i class="fa fa-book"></i>
+          <span class="page">Locations</span>
+        </a>
+      </router-link>
 
-
-
-    <li class="header">PAGES</li>
-    <router-link tag="li" class="pageLink" to="/login">
-      <a>
-        <i class="fa fa-circle-o text-yellow"></i>
-        <span class="page"> Login</span>
-      </a>
-    </router-link>
-    <router-link tag="li" class="pageLink" to="/404">
-      <a>
-        <i class="fa fa-circle-o text-red"></i>
-        <span class="page"> 404</span>
-      </a>
-    </router-link>
+      <li class="header">PAGES</li>
+      <router-link tag="li" class="pageLink" to="/login">
+        <a>
+          <i class="fa fa-circle-o text-yellow"></i>
+          <span class="page"> Login</span>
+        </a>
+      </router-link>
+      <router-link tag="li" class="pageLink" to="/404">
+        <a>
+          <i class="fa fa-circle-o text-red"></i>
+          <span class="page"> 404</span>
+        </a>
+      </router-link>
+    </li>
   </ul>
 </template>
 <script>
