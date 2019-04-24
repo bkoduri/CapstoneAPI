@@ -7,7 +7,7 @@
           <div class="box box-info">
             <!-- Input Addons -->
             <div class="box-header with-border">
-              <h3 class="box-title">Personal Details - DOB, Name, Address</h3>
+              <h3 class="box-title">Personal Details - Name, Address, Date of Birth</h3>
             </div>
 
             <div class="box-body">

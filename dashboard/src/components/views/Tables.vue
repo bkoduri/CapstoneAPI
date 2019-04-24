@@ -17,7 +17,7 @@
       </span>
       <datepicker :readonly="true" format="MMM/D/YYYY" id="dateInput" width="100%"></datepicker>
     </div>
-
+    <br />
     <button type="button" class="btn btn-success" v-on:click="Found = 1">Submit</button>
     </div>
     <div class="row center-block" v-if="Found">
@@ -85,7 +85,7 @@
       </div>
     </div>
 
-    <div class="row center-block">
+    <div class="row center-block" v-if="Found">
       <h2>Diagnostic Reports</h2>
       <div class="col-md-12">
         <div class="box">
