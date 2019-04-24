@@ -10,6 +10,7 @@
       </span>
       <input class="form-control" placeholder="Patient Name" type="text">
     </div>
+    <br />
     <!-- calendar group -->
     <div class="input-group">
       <span class="input-group-addon">
