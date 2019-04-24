@@ -18,8 +18,8 @@
       <datepicker :readonly="true" format="MMM/D/YYYY" id="dateInput" width="100%"></datepicker>
     </div>
     <br />
-    <button type="button" class="btn btn-success" v-on:click="Found = 1">Submit</button>
     </div>
+    <button type="button" class="btn btn-success" v-on:click="Found = 1">Submit</button>
     <div class="row center-block" v-if="Found">
       <h2>Patient Records</h2>
       <div class="col-md-12">
