@@ -14,7 +14,7 @@
                             <!-- with characthers -->
               <div class="input-group">
                 <span class="input-group-addon">
-                  <i class="fa fa-fw fa-at" aria-hidden="true"></i>
+                  <i class="fa fa-fw fa-user" aria-hidden="true"></i>
                 </span>
                 <input class="form-control" placeholder="Patient Name" type="text">
               </div>
