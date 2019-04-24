@@ -16,7 +16,7 @@
       <span class="input-group-addon">
         <i class="fa fa-fw fa-calendar"></i>
       </span>
-      <datepicker :readonly="true" format="MMM/D/YYYY" id="dateInput" width="100%"></datepicker>
+      <input class="form-control" placeholder="Date of Birth" type="text">
     </div>
     <br />
     </div>
