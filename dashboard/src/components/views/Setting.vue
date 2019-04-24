@@ -11,17 +11,7 @@
             </div>
 
             <div class="box-body">
-              <!-- calendar group -->
-              <div class="input-group">
-                <span class="input-group-addon">
-                  <i class="fa fa-fw fa-calendar"></i>
-                </span>
-                <datepicker :readonly="true" format="MMM/D/YYYY" id="dateInput" width="100%"></datepicker>
-              </div>
-              <br />
-              <br />
-
-              <!-- with characthers -->
+                            <!-- with characthers -->
               <div class="input-group">
                 <span class="input-group-addon">
                   <i class="fa fa-fw fa-at" aria-hidden="true"></i>
@@ -32,6 +22,14 @@
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-fw fa-envelope"></i></span>
                 <input class="form-control" placeholder="Mailing Address" type="email">
+              </div>
+              <br />
+              <!-- calendar group -->
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="fa fa-fw fa-calendar"></i>
+                </span>
+                <datepicker :readonly="true" format="MMM/D/YYYY" id="dateInput" width="100%"></datepicker>
               </div>
               <br />
 

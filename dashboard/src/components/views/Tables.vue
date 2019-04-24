@@ -1,5 +1,25 @@
 <template>
   <section class="content">
+  <h2>Please enter the patient details</h2>
+  <div class="box-body">
+
+    <!-- with characthers -->
+    <div class="input-group">
+      <span class="input-group-addon">
+        <i class="fa fa-fw fa-user" aria-hidden="true"></i>
+      </span>
+      <input class="form-control" placeholder="Patient Name" type="text">
+    </div>
+    <!-- calendar group -->
+    <div class="input-group">
+      <span class="input-group-addon">
+        <i class="fa fa-fw fa-calendar"></i>
+      </span>
+      <datepicker :readonly="true" format="MMM/D/YYYY" id="dateInput" width="100%"></datepicker>
+    </div>
+
+    <button type="button" class="btn btn-success" v-on:click="Found = 1">Submit</button>
+    </div>
     <div class="row center-block" v-if="Found">
       <h2>Patient Records</h2>
       <div class="col-md-12">
@@ -160,7 +180,7 @@ export default {
       // githubUrl: 'https://api.github.com/search/repositories?q=language%3Ajavascript&sort=stars',
       githubUrl: 'https://fa2oblaam5.execute-api.us-east-1.amazonaws.com/hapi',
       allergyurl: 'https://9bzu30wdjj.execute-api.us-east-1.amazonaws.com/allergies',
-      Found: 1,
+      Found: 0,
       service: [
         {
           'resource.date': '2018-07-14',
